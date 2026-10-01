@@ -2,14 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerLook : MonoBehaviour
 {
-    private float rayCastDepth = 100f;
-    private LayerMask mask;
     public Transform m_transform;
-
-    private void Start()
-    {
-        mask = LayerMask.GetMask("Ground");
-    }
     public void LookAtMouse()
     {
         Vector3 mousePos = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
