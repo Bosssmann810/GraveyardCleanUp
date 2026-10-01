@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Blast
+  - Enemy
+  - Director
   layers:
   - Default
   - TransparentFX
