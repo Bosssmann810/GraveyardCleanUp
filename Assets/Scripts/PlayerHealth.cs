@@ -4,8 +4,9 @@ using System.Collections.Generic;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHP = 3;
-    private int currentHp;
+    public int currentHp;
     private bool canGetHit = true;
+    public DialougeMnager dialougeMnager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +18,8 @@ public class PlayerHealth : MonoBehaviour
         canGetHit = false;
         currentHp -= 1;
         Debug.Log("Hit");
-        yield return new WaitForSeconds(2);
+        dialougeMnager.HitInsault();
+        yield return new WaitForSeconds(3);
         canGetHit=true;
         Debug.Log("can get hit again");
         StopCoroutine(GetHit());

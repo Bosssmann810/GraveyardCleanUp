@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour
         canBeHit = false;
         enemyHp -= 1;
         Debug.Log("Hit enemy");
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.6f);
         canBeHit = true;
         Debug.Log("enemy can get hit again");
         StopCoroutine(TakeDamage());
