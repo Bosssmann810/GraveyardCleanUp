@@ -5,10 +5,12 @@ public class MenuManager : MonoBehaviour
     public void LoadEndlessMode()
     {
         SceneManager.LoadScene(1);
+        Time.timeScale = 1f;
     }
     public void ReturntoMainMenu()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
     }
     public void Quit()
     {
