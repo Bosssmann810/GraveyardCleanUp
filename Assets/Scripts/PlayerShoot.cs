@@ -20,7 +20,7 @@ public class PlayerShoot : MonoBehaviour
         yield return new WaitForSeconds (0.25f);
         
         blast.SetActive(false);
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.5f);
         canFire = true;
         StopCoroutine(Fire());
     }
