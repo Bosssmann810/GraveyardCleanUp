@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public int currentHp;
     private bool canGetHit = true;
     public DialougeMnager dialougeMnager;
+    public GameOverUi gameOverUi;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
         currentHp -= 1;
         Debug.Log("Hit");
         dialougeMnager.HitInsault();
+        GameOverCheck();
         yield return new WaitForSeconds(3);
         canGetHit=true;
         Debug.Log("can get hit again");
@@ -30,15 +32,19 @@ public class PlayerHealth : MonoBehaviour
         if(canGetHit)
         {
             StartCoroutine(GetHit());
+
         }
     }
     // Update is called once per frame
     void Update()
     {
-        if (currentHp <= 0)
+
+    }
+    public void GameOverCheck()
+    {
+        if(currentHp <= 0)
         {
-            Debug.Log("dead");
-            //add game over stuff here
+            gameOverUi.GameOver();
         }
     }
 }

@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public GameObject player;
     private bool canBeHit;
     public Director director;
+
     void Start()
     {
         canBeHit = true;
