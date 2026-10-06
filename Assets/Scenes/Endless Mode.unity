@@ -2262,6 +2262,7 @@ MonoBehaviour:
   stopWatch: {fileID: 476845879}
   gameOverScreen: {fileID: 1644806183}
   timeSurvivedText: {fileID: 1723958238}
+  player: {fileID: 1800066424}
 --- !u!114 &1048572673
 MonoBehaviour:
   m_ObjectHideFlags: 0

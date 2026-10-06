@@ -17,9 +17,11 @@ public class PlayerShoot : MonoBehaviour
         canFire = false;
         blast.SetActive (true);
 
-        yield return new WaitForSeconds (0.5f);
-        canFire = true;
+        yield return new WaitForSeconds (0.25f);
+        
         blast.SetActive(false);
+        yield return new WaitForSeconds(0.25f);
+        canFire = true;
         StopCoroutine(Fire());
     }
 
