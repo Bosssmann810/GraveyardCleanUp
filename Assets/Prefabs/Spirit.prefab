@@ -135,12 +135,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   enemyHp: 2
   enemyValue: 1
-  enemyMoveSpeed: 10
+  enemyMoveSpeed: 8
   targetPos: {fileID: 0}
   player: {fileID: 0}
   director: {fileID: 0}
   isPossessed: 0
   ghost: {fileID: 2217756794504955213}
+  newGhost: {fileID: 0}
 --- !u!58 &1909469231774627862
 CircleCollider2D:
   m_ObjectHideFlags: 0
