@@ -11,7 +11,9 @@ public class Enemy : MonoBehaviour
     public GameObject player;
     private bool canBeHit;
     public Director director;
-
+    public bool isPossessed;
+    public GameObject ghost;
+    public GameObject newGhost;
     void Start()
     {
         canBeHit = true;
@@ -27,6 +29,13 @@ public class Enemy : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, targetPos.position, enemyMoveSpeed * Time.deltaTime);
         if(enemyHp <= 0)
         {
+            //if ispossesed is ture the enemy will spawn a ghost on death (technically its not a ghost but sumantics.
+            if(isPossessed == true)
+            {
+                Debug.Log("spawning Spirit");
+                newGhost = Instantiate(ghost, null);
+                newGhost.GetComponent<Transform>().position = gameObject.transform.position;
+            }
             director.RetreaveCredits(enemyValue);
             Destroy(gameObject);
         }

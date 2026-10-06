@@ -139,6 +139,9 @@ MonoBehaviour:
   targetPos: {fileID: 0}
   player: {fileID: 0}
   director: {fileID: 0}
+  isPossessed: 0
+  ghost: {fileID: 2217756794504955213, guid: f2cb6a6450dfbe04596e7ce04e9de452, type: 3}
+  newGhost: {fileID: 0}
 --- !u!58 &1909469231774627862
 CircleCollider2D:
   m_ObjectHideFlags: 0

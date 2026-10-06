@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 91572019319421206}
   - component: {fileID: 1909469231774627862}
   m_Layer: 0
-  m_Name: EnemyBase
+  m_Name: Spirit
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2627451}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -134,13 +134,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   enemyHp: 2
-  enemyValue: 2
-  enemyMoveSpeed: 3
+  enemyValue: 1
+  enemyMoveSpeed: 10
   targetPos: {fileID: 0}
   player: {fileID: 0}
   director: {fileID: 0}
   isPossessed: 0
-  ghost: {fileID: 2217756794504955213, guid: f2cb6a6450dfbe04596e7ce04e9de452, type: 3}
+  ghost: {fileID: 2217756794504955213}
 --- !u!58 &1909469231774627862
 CircleCollider2D:
   m_ObjectHideFlags: 0
