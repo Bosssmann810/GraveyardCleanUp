@@ -4,12 +4,14 @@ using System.Collections.Generic;
 public class Director : MonoBehaviour
 {
     public GameObject[] enemySpawnPoints;
-    public GameObject enemy1; 
+    public GameObject enemy1;
+    public GameObject enemy1Special;
     public GameObject enemy2;
     public GameObject enemy3;
     public GameObject enemy4;
     public int credits;
     public int selectedSpawn;
+    public int specialEnemyChance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -64,7 +66,16 @@ public class Director : MonoBehaviour
         {
             credits -= 1;
             selectedSpawn = Random.Range(0, enemySpawnPoints.Length);
-            Instantiate(enemy1, enemySpawnPoints[selectedSpawn].transform);
+            int specialEnemyCheck = Random.Range(0, specialEnemyChance);
+            if (specialEnemyCheck == 0)
+            {
+                Debug.Log("SpecialEnemySpawned");
+                Instantiate(enemy1Special, enemySpawnPoints[selectedSpawn].transform);
+            }
+            else
+            {
+                Instantiate(enemy1, enemySpawnPoints[selectedSpawn].transform);
+            }
             return;
         }
     }
