@@ -3998,6 +3998,7 @@ GameObject:
   - component: {fileID: 1800066431}
   - component: {fileID: 1800066432}
   - component: {fileID: 1800066433}
+  - component: {fileID: 1800066434}
   m_Layer: 0
   m_Name: Playerbody
   m_TagString: Player
@@ -4194,6 +4195,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: f72f228c-4ca6-4ab2-bc27-7ac05619423e
     m_ActionName: 'Player/Pause[/Keyboard/escape,/Keyboard/p]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1800066434}
+        m_TargetAssemblyTypeName: PlayerBombDrop, Assembly-CSharp
+        m_MethodName: BombButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 56f9e241-c6ce-4fba-af5e-45ee4846bfbd
+    m_ActionName: 'Player/DropBomb[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -4278,6 +4295,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   pauseUI: {fileID: 564730772}
   playerRotation: {fileID: 1745599128}
+--- !u!114 &1800066434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800066424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fa3bdc3a90adea46a1c1496ec277065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  currentPlayerPos: {fileID: 1800066427}
+  bomb: {fileID: 2876996331886789543, guid: bb53fdfd246f86e489da31ac1a4ef0b5, type: 3}
+  newBomb: {fileID: 0}
+  bombCoolDown: 3
 --- !u!1 &1820915405
 GameObject:
   m_ObjectHideFlags: 0
