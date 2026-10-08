@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
-    bool m_IsMoving = false;
+    public bool m_IsMoving = false;
     public Rigidbody2D rb;
     void Start()
     {
