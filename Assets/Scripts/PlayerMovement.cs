@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public bool m_IsMoving = false;
     public Rigidbody2D rb;
+    public Vector2 movement;
     void Start()
     {
         
@@ -15,8 +16,8 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed)
         {
             m_IsMoving = true;
-            Vector2 movemet = new Vector2(context.ReadValue<Vector2>().x, context.ReadValue<Vector2>().y);
-            rb.linearVelocity = movemet * 5f ;
+            movement = new Vector2(context.ReadValue<Vector2>().x, context.ReadValue<Vector2>().y);
+            rb.linearVelocity = movement * 5f ;
         }
         if (context.canceled)
         {
