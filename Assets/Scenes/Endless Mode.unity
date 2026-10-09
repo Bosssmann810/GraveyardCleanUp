@@ -1205,7 +1205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &564730773
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1924,7 +1924,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &911016368
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2255,7 +2255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1048572671
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3146,7 +3146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1644806184
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4152,6 +4152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead59d2feab24984089937560cedbfeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  m_IsMoving: 0
   rb: {fileID: 1800066425}
 --- !u!114 &1800066429
 MonoBehaviour:
@@ -4378,7 +4379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
   playerAnimator: {fileID: 1800066434}
   playerLook: {fileID: 1745599130}
-  playerInputs: {fileID: 1800066429}
+  playerMovement: {fileID: 1800066428}
   playerShoot: {fileID: 1800066430}
   isMoving: 0
   isShooting: 0
