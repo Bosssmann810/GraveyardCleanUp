@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
     public bool isPossessed;
     public GameObject ghost;
     public GameObject newGhost;
+
+    public SpriteRenderer sprite;
     void Start()
     {
         canBeHit = true;
@@ -27,6 +29,14 @@ public class Enemy : MonoBehaviour
     {
         targetPos.position = player.GetComponent<Transform>().position;
         transform.position = Vector3.MoveTowards(transform.position, targetPos.position, enemyMoveSpeed * Time.deltaTime);
+        if(targetPos.position.x > transform.position.x)
+        {
+            sprite.flipX = false;
+        }
+        if(targetPos.position.x < transform.position.x)
+        {
+            sprite.flipX = true;
+        }
         if(enemyHp <= 0)
         {
             //if ispossesed is ture the enemy will spawn a ghost on death (technically its not a ghost but sumantics.

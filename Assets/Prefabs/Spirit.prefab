@@ -143,6 +143,7 @@ MonoBehaviour:
   isPossessed: 0
   ghost: {fileID: 2217756794504955213}
   newGhost: {fileID: 0}
+  sprite: {fileID: 8195250876411598103}
 --- !u!58 &1909469231774627862
 CircleCollider2D:
   m_ObjectHideFlags: 0
