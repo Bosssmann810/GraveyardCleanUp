@@ -8,6 +8,8 @@ public class PlayerHealth : MonoBehaviour
     private bool canGetHit = true;
     public DialougeMnager dialougeMnager;
     public GameOverUi gameOverUi;
+    public AudioSource playerAudio;
+    public AudioClip hitSound;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,6 +21,8 @@ public class PlayerHealth : MonoBehaviour
         canGetHit = false;
         currentHp -= 1;
         Debug.Log("Hit");
+        playerAudio.clip = hitSound;
+        playerAudio.Play();
         dialougeMnager.HitInsault();
         GameOverCheck();
         yield return new WaitForSeconds(3);
