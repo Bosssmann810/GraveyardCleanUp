@@ -18,6 +18,7 @@ public class GameOverUi : MonoBehaviour
     public void GameOver()
     {
         stopWatch.StopStopWatch();
+        stopWatch.SaveHighScore();
         gameOverScreen.SetActive(true);
         timeSurvivedText.text = $"You Survived for {Mathf.FloorToInt(stopWatch.elapsedTime / 60)} minutes and {Mathf.FloorToInt(stopWatch.elapsedTime % 60)} seconds";
         Time.timeScale = 0f;

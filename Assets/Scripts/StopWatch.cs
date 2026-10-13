@@ -1,5 +1,9 @@
 using UnityEngine;
 using TMPro;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+using System;
+using System.Collections;
 public class StopWatch : MonoBehaviour
 {
     public TextMeshProUGUI stopWatchText;
@@ -46,5 +50,15 @@ public class StopWatch : MonoBehaviour
     public void StopStopWatch()
     {
         isActive = false;
+    }
+    public void SaveHighScore()
+    {
+        Debug.Log("Saving");
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Create(Application.persistentDataPath + "/highScore.dat");
+        Debug.Log(file);
+        float highScore = elapsedTime;
+        bf.Serialize(file, highScore);
+        file.Close();
     }
 }
