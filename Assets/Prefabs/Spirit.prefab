@@ -136,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   enemyHp: 2
   enemyValue: 0
-  enemyMoveSpeed: 8
+  enemyMoveSpeed: 6
   targetPos: {fileID: 0}
   player: {fileID: 0}
   director: {fileID: 0}
