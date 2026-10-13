@@ -4,7 +4,8 @@ using System.Collections.Generic;
 public class PlayerShoot : MonoBehaviour
 {
     public GameObject blast;
-
+    public AudioClip blastSound;
+    public AudioSource playerAudio;
     private bool canFire;
     private void Start()
     {
@@ -16,7 +17,8 @@ public class PlayerShoot : MonoBehaviour
     {
         canFire = false;
         blast.SetActive (true);
-
+        playerAudio.clip = blastSound;
+        playerAudio.Play();
         yield return new WaitForSeconds (0.25f);
         
         blast.SetActive(false);
