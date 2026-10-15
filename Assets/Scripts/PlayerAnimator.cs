@@ -8,10 +8,12 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField] PlayerLook playerLook;
     [SerializeField] PlayerMovement playerMovement;
     [SerializeField] PlayerShoot playerShoot;
-
+    [SerializeField] PlayerHealth playerHealth;
+ 
     int isMovingHash = Animator.StringToHash("isMoving");
     int isShootingHash = Animator.StringToHash("isShooting");
     int isLeftHash = Animator.StringToHash("isLeft");
+    int hasIFramesHash = Animator.StringToHash("hasIFrames");
 
     public bool isMoving;
     public bool isShooting;
@@ -54,5 +56,6 @@ public class PlayerAnimator : MonoBehaviour
     {
         UpdateValues();
         AnimationMovement();
+        playerAnimator.SetBool(hasIFramesHash, !playerHealth.canGetHit);
     }
 }

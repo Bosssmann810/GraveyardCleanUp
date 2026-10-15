@@ -5,7 +5,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHP = 3;
     public int currentHp;
-    private bool canGetHit = true;
+    public bool canGetHit = true;
     public DialougeMnager dialougeMnager;
     public GameOverUi gameOverUi;
     public AudioSource playerAudio;

@@ -9310,6 +9310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   maxHP: 3
   currentHp: 0
+  canGetHit: 1
   dialougeMnager: {fileID: 1034420495}
   gameOverUi: {fileID: 1048572672}
   playerAudio: {fileID: 956466222}
@@ -9382,6 +9383,7 @@ MonoBehaviour:
   playerLook: {fileID: 1745599130}
   playerMovement: {fileID: 1800066428}
   playerShoot: {fileID: 1800066430}
+  playerHealth: {fileID: 1800066431}
   isMoving: 0
   isShooting: 0
   isLeft: 0
