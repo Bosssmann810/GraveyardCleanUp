@@ -4250,7 +4250,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7076052, z: 0.70660806, w: 0}
   m_LocalPosition: {x: -0.07152001, y: 0.32605028, z: 0}
-  m_LocalScale: {x: 0.25356874, y: 0.27168408, z: 1.3833956}
+  m_LocalScale: {x: 0.38266057, y: 0.40999845, z: 2.0876822}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1745599129}
@@ -4471,7 +4471,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5.06
+      scalar: 3.3024626
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4967,7 +4967,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 65.03
+    angle: 49.01059
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -5685,21 +5685,21 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
+          inSlope: 1.79999
+          outSlope: 1.79999
+          tangentMode: 34
           weightedMode: 0
-          inWeight: 0.33333334
+          inWeight: 0
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.22579956
+          time: 0.5555586
           value: 1
-          inSlope: 1
-          outSlope: 1
-          tangentMode: 0
+          inSlope: 1.79999
+          outSlope: 1.79999
+          tangentMode: 34
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.33333334
+          outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -6118,7 +6118,7 @@ ParticleSystem:
     orbitalOffsetX:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: -108.41
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -6171,7 +6171,7 @@ ParticleSystem:
     orbitalOffsetY:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: -80.31
       minScalar: 0
       maxCurve:
         serializedVersion: 2
