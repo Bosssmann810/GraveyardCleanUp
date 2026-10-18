@@ -7,6 +7,7 @@ public class PlayerShoot : MonoBehaviour
     public AudioClip blastSound;
     public AudioSource playerAudio;
     private bool canFire;
+    public ParticleSystem blastParticles;
     private void Start()
     {
         canFire = true;
@@ -18,6 +19,7 @@ public class PlayerShoot : MonoBehaviour
         canFire = false;
         blast.SetActive (true);
         playerAudio.clip = blastSound;
+        blastParticles.Play();
         playerAudio.Play();
         yield return new WaitForSeconds (0.25f);
         
