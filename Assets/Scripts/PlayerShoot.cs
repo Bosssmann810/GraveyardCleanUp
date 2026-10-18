@@ -22,6 +22,7 @@ public class PlayerShoot : MonoBehaviour
         blastParticles.Play();
         playerAudio.Play();
         yield return new WaitForSeconds (0.25f);
+        blastParticles.Stop();
         
         blast.SetActive(false);
         yield return new WaitForSeconds(0.5f);

@@ -4146,6 +4146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e48b83a7f43af964a80fa74793930230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  blastParticle: {fileID: 1779124655}
   m_transform: {fileID: 1745599129}
 --- !u!1 &1746005539
 GameObject:
@@ -4352,7 +4353,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -9395,6 +9396,7 @@ MonoBehaviour:
   blast: {fileID: 317712526}
   blastSound: {fileID: 8300000, guid: e0878ce56f31e2340b77ecaf9109ba36, type: 3}
   playerAudio: {fileID: 956466222}
+  blastParticles: {fileID: 1779124655}
 --- !u!114 &1800066431
 MonoBehaviour:
   m_ObjectHideFlags: 0
