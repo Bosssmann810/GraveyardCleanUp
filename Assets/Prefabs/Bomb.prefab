@@ -109,7 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   blastRadius: {fileID: 4374591267643553870}
   fuseTime: 2
-  exsplosionDuration: 1
+  exsplosionDuration: 0.5
   bombAudio: {fileID: 4407488106738500765}
   bombClip: {fileID: 8300000, guid: 4a0a8bd67635c1243a9681e4a35267e1, type: 3}
 --- !u!82 &4407488106738500765
@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 3596890470858952616}
   - component: {fileID: 6162205089887344673}
   - component: {fileID: 224854700692435884}
+  - component: {fileID: 3752836239925809940}
   m_Layer: 0
   m_Name: blast radius
   m_TagString: Blast
@@ -259,8 +260,8 @@ Transform:
   m_GameObject: {fileID: 4374591267643553870}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalPosition: {x: -0.03, y: 0.34, z: 0}
+  m_LocalScale: {x: 2.4710886, y: 2.4710886, z: 2.4710886}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4859334638770819184}
@@ -312,10 +313,10 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.6947569, b: 0, a: 1}
+  m_Sprite: {fileID: -7887726898947509859, guid: a1d1fa4e414cec141b35f8122b52de85, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -358,8 +359,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.49999997
+  m_Offset: {x: 0.020082893, y: -0.1437908}
+  m_Radius: 0.8148185
 --- !u!114 &224854700692435884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,3 +373,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cd0e2335beb5154786f47b3ba1113d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Blast
+--- !u!95 &3752836239925809940
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4374591267643553870}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f56e8fa398b1d7e488168622c9e0a7a4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
